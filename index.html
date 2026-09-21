@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Sport & Supercars</title>
+    <title>Velocity | Sportcars & Supercars</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -12,90 +12,251 @@
 <body>
 
     <header>
-        <h1>SPORT & SUPERCARS</h1>
+
+        <div class="logo">
+            VELOCITY
+        </div>
 
         <nav>
-            <button onclick="showSection('sport')">Sport</button>
-            <button onclick="showSection('cars')">Supercars</button>
+            <a href="#home">Home</a>
+            <a href="#cars">Auto's</a>
+            <a href="#about">Over</a>
         </nav>
+
     </header>
 
 
     <main>
 
-        <section id="sport">
-            <h2>🏆 Sport</h2>
+        <!-- HERO -->
 
-            <div class="cards">
+        <section id="home" class="hero">
 
-                <div class="card">
-                    <h3>F1</h3>
-                    <p>Bekijk de wereld van Formule 1, races en snelle auto's.</p>
-                    <button onclick="showMessage('Formule 1 is de snelste raceklasse ter wereld!')">
-                        Meer info
-                    </button>
-                </div>
+            <div class="hero-text">
 
-                <div class="card">
-                    <h3>Voetbal</h3>
-                    <p>Nieuws, wedstrijden en de grootste voetbalclubs.</p>
-                    <button onclick="showMessage('Voetbal is een van de populairste sporten ter wereld!')">
-                        Meer info
-                    </button>
-                </div>
+                <p class="small-title">SPORTCARS & SUPERCARS</p>
 
-                <div class="card">
-                    <h3>Autosport</h3>
-                    <p>Van GT-races tot rally en endurance racing.</p>
-                    <button onclick="showMessage('Autosport draait om snelheid, techniek en strategie!')">
-                        Meer info
-                    </button>
-                </div>
+                <h1>
+                    DRIVE<br>
+                    <span>THE EXTRAORDINARY.</span>
+                </h1>
+
+                <p>
+                    Ontdek bijzondere sportauto's en supercars.
+                    Bekijk de auto's, leer meer over hun prestaties
+                    en ontdek wat ze zo speciaal maakt.
+                </p>
+
+                <a href="#cars" class="hero-button">
+                    Ontdek auto's
+                </a>
 
             </div>
+
         </section>
 
 
-        <section id="cars">
-            <h2>🏎️ Supercars</h2>
+        <!-- CARS -->
 
-            <div class="cards">
+        <section id="cars" class="cars-section">
 
-                <div class="card car">
-                    <h3>Ferrari SF90</h3>
-                    <p>Een krachtige hybride supercar van Ferrari.</p>
-                    <button onclick="showMessage('De Ferrari SF90 combineert een V8 met elektrische motoren.')">
-                        Bekijk auto
-                    </button>
-                </div>
+            <div class="section-title">
+                <p>OUR COLLECTION</p>
+                <h2>Sportauto's & Supercars</h2>
+            </div>
 
-                <div class="card car">
-                    <h3>Lamborghini Revuelto</h3>
-                    <p>Een moderne Lamborghini met een krachtige V12.</p>
-                    <button onclick="showMessage('De Revuelto is een hybride V12-supercar.')">
-                        Bekijk auto
-                    </button>
-                </div>
 
-                <div class="card car">
-                    <h3>McLaren 750S</h3>
-                    <p>Lichtgewicht, snel en gemaakt voor prestaties.</p>
-                    <button onclick="showMessage('De McLaren 750S is gebouwd met snelheid als belangrijkste doel.')">
-                        Bekijk auto
-                    </button>
-                </div>
+            <div class="cars-grid">
+
+
+                <!-- Ferrari -->
+
+                <article class="car-card">
+
+                    <img
+                        src="https://commons.wikimedia.org/wiki/Special:FilePath/Ferrari%20SF90%20Stradale%20%E2%80%93%20f%2002052026.jpg"
+                        alt="Ferrari SF90 Stradale"
+                    >
+
+                    <div class="car-info">
+
+                        <p class="brand">FERRARI</p>
+
+                        <h3>SF90 Stradale</h3>
+
+                        <p>
+                            Een hybride supercar met een krachtige
+                            V8-motor en drie elektromotoren.
+                        </p>
+
+                        <div class="specs">
+                            <span>V8</span>
+                            <span>Hybrid</span>
+                            <span>AWD</span>
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Lamborghini -->
+
+                <article class="car-card">
+
+                    <img
+                        src="https://commons.wikimedia.org/wiki/Special:FilePath/Lamborghini%20Revuelto%20IMG%200562.jpg"
+                        alt="Lamborghini Revuelto"
+                    >
+
+                    <div class="car-info">
+
+                        <p class="brand">LAMBORGHINI</p>
+
+                        <h3>Revuelto</h3>
+
+                        <p>
+                            Een moderne Lamborghini met een
+                            V12-motor en hybride aandrijving.
+                        </p>
+
+                        <div class="specs">
+                            <span>V12</span>
+                            <span>Hybrid</span>
+                            <span>AWD</span>
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- McLaren -->
+
+                <article class="car-card">
+
+                    <img
+                        src="https://commons.wikimedia.org/wiki/Special:FilePath/McLaren%20750S%20%2853047565942%29.jpg"
+                        alt="McLaren 750S"
+                    >
+
+                    <div class="car-info">
+
+                        <p class="brand">MCLAREN</p>
+
+                        <h3>750S</h3>
+
+                        <p>
+                            Een lichte supercar die volledig is
+                            gericht op prestaties en snelheid.
+                        </p>
+
+                        <div class="specs">
+                            <span>V8</span>
+                            <span>750 HP</span>
+                            <span>RWD</span>
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Porsche -->
+
+                <article class="car-card">
+
+                    <img
+                        src="https://commons.wikimedia.org/wiki/Special:FilePath/Porsche%20911%20GT3%20RS.jpg"
+                        alt="Porsche 911 GT3 RS"
+                    >
+
+                    <div class="car-info">
+
+                        <p class="brand">PORSCHE</p>
+
+                        <h3>911 GT3 RS</h3>
+
+                        <p>
+                            Een sportauto die sterk gericht is op
+                            circuitprestaties en aerodynamica.
+                        </p>
+
+                        <div class="specs">
+                            <span>FLAT-6</span>
+                            <span>GT3 RS</span>
+                            <span>RWD</span>
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Aston Martin -->
+
+                <article class="car-card">
+
+                    <img
+                        src="https://commons.wikimedia.org/wiki/Special:FilePath/Aston%20Martin%20Vantage%20%282024%29%20IMG%200002.jpg"
+                        alt="Aston Martin Vantage"
+                    >
+
+                    <div class="car-info">
+
+                        <p class="brand">ASTON MARTIN</p>
+
+                        <h3>Vantage</h3>
+
+                        <p>
+                            Een krachtige sportauto met een
+                            luxe interieur en agressief design.
+                        </p>
+
+                        <div class="specs">
+                            <span>V8</span>
+                            <span>TWIN TURBO</span>
+                            <span>RWD</span>
+                        </div>
+
+                    </div>
+
+                </article>
+
 
             </div>
+
+        </section>
+
+
+        <!-- ABOUT -->
+
+        <section id="about" class="about">
+
+            <p>ABOUT VELOCITY</p>
+
+            <h2>
+                Voor mensen die<br>
+                van auto's houden.
+            </h2>
+
+            <p class="about-text">
+                Velocity is een website voor liefhebbers van
+                sportauto's en supercars. Van Ferrari en Lamborghini
+                tot Porsche, McLaren en Aston Martin.
+            </p>
+
         </section>
 
     </main>
 
 
-    <div id="message"></div>
-
-
     <footer>
-        <p>Sport & Supercars © 2026</p>
+
+        <p>VELOCITY © 2026</p>
+
+        <p>Sportcars & Supercars</p>
+
     </footer>
 
 
