@@ -1,5 +1,6 @@
 const cars = document.querySelectorAll(".car-card");
 
+
 cars.forEach(function(car) {
 
     car.addEventListener("click", function() {
