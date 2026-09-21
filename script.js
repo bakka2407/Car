@@ -1,26 +1,13 @@
-function showMessage(message) {
-    const messageBox = document.getElementById("message");
+const cars = document.querySelectorAll(".car-card");
 
-    messageBox.innerHTML = message;
-    messageBox.style.display = "block";
+cars.forEach(function(car) {
 
-    setTimeout(function() {
-        messageBox.style.display = "none";
-    }, 3000);
-}
+    car.addEventListener("click", function() {
 
+        const name = car.querySelector("h3").innerHTML;
 
-function showSection(section) {
-    const sport = document.getElementById("sport");
-    const cars = document.getElementById("cars");
+        alert("Je hebt gekozen voor: " + name);
 
-    if (section === "sport") {
-        sport.style.display = "block";
-        cars.style.display = "none";
-    }
+    });
 
-    if (section === "cars") {
-        sport.style.display = "none";
-        cars.style.display = "block";
-    }
-}
+});
