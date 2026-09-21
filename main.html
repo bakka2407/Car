@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sport & Supercars</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>SPORT & SUPERCARS</h1>
+
+        <nav>
+            <button onclick="showSection('sport')">Sport</button>
+            <button onclick="showSection('cars')">Supercars</button>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <section id="sport">
+            <h2>🏆 Sport</h2>
+
+            <div class="cards">
+
+                <div class="card">
+                    <h3>F1</h3>
+                    <p>Bekijk de wereld van Formule 1, races en snelle auto's.</p>
+                    <button onclick="showMessage('Formule 1 is de snelste raceklasse ter wereld!')">
+                        Meer info
+                    </button>
+                </div>
+
+                <div class="card">
+                    <h3>Voetbal</h3>
+                    <p>Nieuws, wedstrijden en de grootste voetbalclubs.</p>
+                    <button onclick="showMessage('Voetbal is een van de populairste sporten ter wereld!')">
+                        Meer info
+                    </button>
+                </div>
+
+                <div class="card">
+                    <h3>Autosport</h3>
+                    <p>Van GT-races tot rally en endurance racing.</p>
+                    <button onclick="showMessage('Autosport draait om snelheid, techniek en strategie!')">
+                        Meer info
+                    </button>
+                </div>
+
+            </div>
+        </section>
+
+
+        <section id="cars">
+            <h2>🏎️ Supercars</h2>
+
+            <div class="cards">
+
+                <div class="card car">
+                    <h3>Ferrari SF90</h3>
+                    <p>Een krachtige hybride supercar van Ferrari.</p>
+                    <button onclick="showMessage('De Ferrari SF90 combineert een V8 met elektrische motoren.')">
+                        Bekijk auto
+                    </button>
+                </div>
+
+                <div class="card car">
+                    <h3>Lamborghini Revuelto</h3>
+                    <p>Een moderne Lamborghini met een krachtige V12.</p>
+                    <button onclick="showMessage('De Revuelto is een hybride V12-supercar.')">
+                        Bekijk auto
+                    </button>
+                </div>
+
+                <div class="card car">
+                    <h3>McLaren 750S</h3>
+                    <p>Lichtgewicht, snel en gemaakt voor prestaties.</p>
+                    <button onclick="showMessage('De McLaren 750S is gebouwd met snelheid als belangrijkste doel.')">
+                        Bekijk auto
+                    </button>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <div id="message"></div>
+
+
+    <footer>
+        <p>Sport & Supercars © 2026</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
